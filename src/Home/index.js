@@ -6,13 +6,17 @@ import { useMediaQuery } from '@mui/material';
 import './index.css'
 import '../global.css'
 import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
-
+    const navigate = useNavigate()
     let textArray = ["Empowering Women Through Menstrual Hygiene", "Take Action to Break the Period Taboo", "Make a Difference in Women's Lives"]
-
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
     const isSmallScreen = useMediaQuery('(max-width: 800px)');
+
+    const handleNavigation = (path) => {
+        navigate(path);
+    }
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -87,8 +91,11 @@ function Home() {
                             <p className={isSmallScreen ? 'para-text-sm-2' : 'para-text-2'}>Our Mission</p>
                             <EastOutlinedIcon style={{
                                 color: 'white',
-                                fontSize: '42px'
-                            }} />
+                                fontSize: '42px',
+                                cursor:'pointer'
+                            }} 
+                            onClick={() => handleNavigation('/whatWeDo')}
+                            />
                         </div>
                     </div>
                 </div>
@@ -100,8 +107,11 @@ function Home() {
                             <p className={isSmallScreen ? 'para-text-sm-2' : 'para-text-2'}>Our Imapct</p>
                             <EastOutlinedIcon style={{
                                 color: 'white',
-                                fontSize: '42px'
-                            }} />
+                                fontSize: '42px',
+                                cursor:'pointer'
+                            }} 
+                            onClick={() => handleNavigation('/whoWe')}
+                            />
                         </div>
                     </div>
                 </div>

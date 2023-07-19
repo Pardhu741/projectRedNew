@@ -2,6 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Switch, Link,Routes} from "react-router-dom";
 import Home from './Home';
+import WhatWeDo from './WhatWeDo';
+import WhoWeAre from './WhoWeAre';
+import OurWork from './OurWork';
 
 function App() {
   return (
@@ -9,8 +12,11 @@ function App() {
        <BrowserRouter>
         <Routes>
             <Route exact path={"/"} Component={Home}/>
-            {/* <Route exact path={"/ourWork"} Component={OurWork}/>
+            <Route exact path={"/whatWeDo"} Component={WhatWeDo}/>
             <Route exact path={"/whoWe"} Component={WhoWeAre}/>
+            <Route exact path={"/ourWork"} Component={OurWork}/>
+            {/* <Route exact path={"/ourWork"} Component={OurWork}/>
+            // <Route exact path={"/whoWe"} Component={WhoWeAre}/>
             <Route exact path={"/joinUs"} Component={JoinUs}/> */}
         </Routes>
         

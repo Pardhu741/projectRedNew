@@ -1,7 +1,13 @@
 import React from "react";
 import './index.css'
+import { useState } from "react";
 
 function Footer() {
+
+    function handleOpens(path){
+        window.open(path,'_blank')
+    }
+
     return (
         <footer class="footer">
             <div class="footer-left">
@@ -18,8 +24,8 @@ function Footer() {
             <div class="footer-right">
                 <div class="block">
                     <h4 className="footer-text">FACEBOOK</h4>
-                    <h4 className="footer-text">TWITTER</h4>
-                    <h4 className="footer-text">INSTAGRAM</h4>
+                    {/* <h4 className="footer-text">TWITTER</h4> */}
+                    <h4 className="footer-text" style={{cursor:"pointer"}} onClick={()=>handleOpens('https://www.instagram.com/project_r3d/?hl=en')}>INSTAGRAM</h4>
                 </div>
                 <div class="block">
                     <h4 className="footer-text">CONTACT</h4>

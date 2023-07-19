@@ -1,0 +1,56 @@
+.overlay-container {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh; /* Set min-height to ensure the container covers the content height */
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://static.wixstatic.com/media/9c608a_84dd07f87f0848c4b78f0f134135029a~mv2_d_4272_2848_s_4_2.jpg') center/cover no-repeat;
+    z-index: -1; /* Place the background image behind the content */
+  }
+  
+  .overlay-content {
+    padding: 50px; /* Adjust the padding as needed to create the desired overlay effect */
+    background-color: rgba(24, 21, 124, 0.9);
+    color: white; /* Change text color to white for better visibility on the overlay */
+  }
+
+  .text-row-mn-2{
+    font-size: 36px;
+    color: rgb(234,222,113);
+    font-weight: 500;
+}
+
+.text-row-mn-3{
+    font-size: 24px;
+    color: rgb(234,222,113);
+    font-weight: 500;
+}
+
+.logos-container {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align logos vertically in the center */
+    justify-content: space-between; /* Distribute logos evenly */
+    margin-top: 2%;
+  }
+  
+  .logo {
+    width: 100px; /* Set the width of each logo */
+    height: 100px; /* Set the height of each logo */
+    object-fit: contain; /* Scale the logos to fit the container without distortion */
+  }
+
+  @media screen and (max-width: 767px) {
+    .logos-container {
+      flex-direction: column;
+    }
+
+    .logo{
+        margin-bottom: 5%;
+    }
+  }

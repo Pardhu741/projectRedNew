@@ -12,12 +12,16 @@ const Navbar = () => {
     const navigate = useNavigate()
     const drawerWidth = 300
 
+    const [item, setItem] = useState(-1)
+
     const handleMenuClick = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    const handleNavigation = (path) => {
+    const handleNavigation = (path, index) => {
+        setItem(index)
         navigate(path);
+        console.log(item, 'item')
     }
 
     return (
@@ -71,17 +75,35 @@ const Navbar = () => {
                                     </IconButton>
                                 </div>
                                 <div style={{ display: 'flex', flexDirection: 'row', justifyContent: "flex-end", width: '100%' }}>
-                                    <ListItem button sx={{ width: 150 }} onClick={() => handleNavigation('/')}>
-                                        <ListItemText primary="What we do" className='global-text-sty' />
+                                    <ListItem button sx={{ width: 150 }} onClick={() => {
+                                        handleNavigation('/whatWeDo');
+                                        setItem(0);
+                                    }}
+                                    >
+                                        <ListItemText primary="What we do" className={item === 0 ? 'global-text-sty-manp' : 'global-text-sty'} />
                                     </ListItem>
-                                    <ListItem button sx={{ width: 150 }} onClick={() => handleNavigation('/whoWe')}>
-                                        <ListItemText primary="Who we are" className='global-text-sty' />
+                                    <ListItem button sx={{ width: 150 }} onClick={() => {
+                                        handleNavigation('/whoWe');
+                                        setItem(1);
+                                    }}
+                                    >
+                                        <ListItemText primary="Who we are" className={item === 1 ? 'global-text-sty-manp' : 'global-text-sty'} />
                                     </ListItem>
-                                    <ListItem button sx={{ width: 150 }} onClick={() => handleNavigation('/ourWork')}>
-                                        <ListItemText primary="Our work" className='global-text-sty' />
+                                    <ListItem button sx={{ width: 150 }}
+                                    onClick={() => {
+                                        handleNavigation('/ourWork');
+                                        setItem(2);
+                                    }}
+                                    >
+                                        <ListItemText primary="Our work" className={item === 2 ? 'global-text-sty-manp' : 'global-text-sty'} />
                                     </ListItem>
-                                    <ListItem button sx={{ width: 150 }} onClick={() => handleNavigation('/joinUs')}>
-                                        <ListItemText primary="Join us" className='global-text-sty' />
+                                    <ListItem button sx={{ width: 150 }}
+                                    onClick={() => {
+                                        handleNavigation('/joinUs');
+                                        setItem(3);
+                                    }}
+                                    >
+                                        <ListItemText primary="Join us" className={item === 3 ? 'global-text-sty-manp' : 'global-text-sty'} />
                                     </ListItem>
                                 </div>
                             </div>
@@ -107,16 +129,36 @@ const Navbar = () => {
                 </Toolbar>
                 <List>
                     <ListItem button>
-                        <ListItemText primary="What we do" className='global-text-sty' onClick={() => handleNavigation('/')} />
+                        <ListItemText primary="What we do" className={item === 0 ? 'global-text-sty-manp' : 'global-text-sty'}
+                        onClick={() => {
+                            handleNavigation('/whatWeDo');
+                            setItem(0);
+                        }}
+                        />
                     </ListItem>
                     <ListItem button>
-                        <ListItemText primary="Who we are" className='global-text-sty' onClick={() => handleNavigation('/whoWe')} />
+                        <ListItemText primary="Who we are" className={item === 1 ? 'global-text-sty-manp' : 'global-text-sty'}
+                        onClick={() => {
+                            handleNavigation('/whoWe');
+                            setItem(1);
+                        }}
+                        />
                     </ListItem>
                     <ListItem button>
-                        <ListItemText primary="Our work" className='global-text-sty' onClick={() => handleNavigation('/ourWork')} />
+                        <ListItemText primary="Our work" className={item === 2 ? 'global-text-sty-manp' : 'global-text-sty'} 
+                        onClick={() => {
+                            handleNavigation('/ourWork');
+                            setItem(2);
+                        }}
+                        />
                     </ListItem>
                     <ListItem button>
-                        <ListItemText primary="Join us" className='global-text-sty' onClick={() => handleNavigation('/joinUs')} />
+                        <ListItemText primary="Join us" className={item === 3 ? 'global-text-sty-manp' : 'global-text-sty'}
+                        onClick={() => {
+                            handleNavigation('/joinUs');
+                            setItem(3);
+                        }}
+                        />
                     </ListItem>
                 </List>
                 {/* <SearchIcon /> */}

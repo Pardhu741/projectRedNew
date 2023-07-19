@@ -9,8 +9,15 @@
   }
 
 .global-text-sty{
-    font-family: "roboto";
+    /* font-family: "roboto"; */
     color: White;
+    font-size: 28px !important;
+    font-weight: bold !important;
+  }
+
+  .global-text-sty-manp{
+    /* font-family: "roboto"; */
+    color: yellow;
     font-size: 28px !important;
     font-weight: bold !important;
   }
