@@ -1,0 +1,19 @@
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.head-sty{
+    font-family: "roboto";
+    color: #696868;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+  }
+
+.css-10hburv-MuiTypography-root{
+    font-weight: 900 !important;
+    font-size: 18px !important;
+}
+
+.fade-in-image { animation: fadeIn 5s; }
+  

@@ -1,0 +1,40 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    width: 50%;
+  }
+  
+  .footer-left{
+    display: flex;
+    flex-direction: column;
+    margin-right: 11%;
+  }
+
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  .block {
+    margin-bottom: 20px;
+  }
+
+  .footer-text{
+    font-size: 18px;
+    color: rgb(24,21,124)
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+    }
+    .footer-left, .footer-right {
+      margin-bottom: 20px;
+    }
+  }
+
+
+  
