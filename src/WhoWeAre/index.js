@@ -3,15 +3,31 @@ import Navbar from "../NavBar";
 import Founder from '../founder.jpg'
 import Footer from "../Footer";
 import { useMediaQuery } from '@mui/material';
+import { useEffect } from "react";
 
 function WhoWeAre() {
     const isSmallScreen = useMediaQuery('(max-width: 800px)');
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
     return (
         <>
             <div className="overlay-container">
                 <div className="background-image"></div>
                 <Navbar />
                 <div className="overlay-content">
+                <div class="container" style={{ marginTop: '2%' }}>
+                        <div class="content glob-centre-3" style={{ marginLeft: "8%" }}>
+                        <h2 style={{ marginTop: '0px', marginBottom: "15px" }} className="text-row-mn">Who We Are</h2>
+                        <p style={{ width: "80%",marginBottom:"6%" }} className="text-para-mn">Project Red is a registered non-profit organization that aims to empower women by expanding awareness about menstrual hygiene and enabling access to sanitary products. We believe in breaking the period taboo and creating an open dialogue about menstrual health. Our team is dedicated to providing women with the resources they need to manage their periods with dignity and confidence.</p>
+                        </div>
+                        <div className="carousel-container" style={{ flex: '1', maxWidth: '50%', height: '100%', overflow: 'hidden', marginLeft: "3%"}}>
+                            <img src="https://res.cloudinary.com/dask68vcu/image/upload/v1690309467/WhatsApp_Image_2020-12-03_at_4.22.24_PM_2_wjmmjs.jpg" style={{borderRadius:"15px"}}/>
+                        </div>
+                    </div>
+                    <div style={{ borderTop: '2px solid white', width: '100%',marginTop:"3%" }}></div>
                     <div class="container" style={{ marginTop: '2%' }}>
                         <div class="content glob-centre-3" style={{ marginLeft: "8%" }}>
                             <h2 style={{ marginTop: '0px', marginBottom: "15px" }} className="text-row-mn">What The Story of Project Red</h2>
@@ -20,6 +36,9 @@ function WhoWeAre() {
                             <p style={{ width: "80%" }} className="text-para-mn">When the second wave of COVID19 hit, families barely had enough money to buy food and keep the house running, so buying pads was out of the question. To help women in these times, I donated over 2000 reusable pads to different parts of India that needed help. I helped women craft villages across India as well as organisations like Blind Relief Foundation, Uday Foundation, Mitr Trust.</p>
                             <p style={{ width: "80%" }} className="text-para-mn">I wanted to find a more sustainble solution in which the women could be independent and not rely on pads from other people, so I innovated a pad vending machine. The machine can be free of charge or accept a 1 rupee coin, can run with electricty or with a battery and has an SMS module that sends a message whenever the pads are over. With the help of Taarini Foundation, I was able to install these machines in a boarding school, a women's jail and a vocational training center, together helping over 600 women.</p>
                         </div>
+                        <div className="carousel-container" style={{ flex: '1', maxWidth: '50%', height: '100%', overflow: 'hidden', marginLeft: "3%"}}>
+                            <img src="https://res.cloudinary.com/dcewbqlgf/image/upload/v1690302204/project_red/Menstrual_20Info_20Final_page-0001_oclfph.jpg" style={{borderRadius:"15px"}}/>
+                        </div>
                     </div>
                     <div style={{ borderTop: '2px solid white', width: '100%',marginTop:"3%" }}></div>
                     <div class="container" style={{ marginTop: '3%' }}>
@@ -27,8 +46,8 @@ function WhoWeAre() {
                             <h2 style={{ marginTop: '0px', marginBottom: "15px" }} className="text-row-mn">Meet the Founder</h2>
                             <p style={{ width: "90%" }} className="text-para-mn">Hi! My name is Anshi Aggarwal and I am a 17-year-old girl living in Singapore and studying in Singapore American School. Before moving to Singapore, I lived in Gurgaon, India, for 15 years and studied in The Shri Ram School Aravali.</p>
                         </div>
-                        <div className="carousel-container" style={{ flex: '1', maxWidth: isSmallScreen ? "" : '50%', height: '500px', overflow: 'hidden', marginRight: "3%" }}>
-                            <img src={Founder} style={{ height: "500px",marginLeft: isSmallScreen ? "0":"8rem",borderRadius:"20px"}} className="marg-mg"/>
+                        <div className="carousel-container" style={{ flex: '1', maxWidth: isSmallScreen ? "" : '70%', height: '500px', overflow: 'hidden', marginRight: "3%" }}>
+                            <img src={Founder} style={{ height: "500px",width:"400px",marginLeft: isSmallScreen ? "0":"8rem",borderRadius:"20px"}} className="marg-mg"/>
                         </div>
                     </div>
                 </div>

@@ -5,6 +5,7 @@ import Home from './Home';
 import WhatWeDo from './WhatWeDo';
 import WhoWeAre from './WhoWeAre';
 import OurWork from './OurWork';
+import JoinUs from './JoinUs';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route exact path={"/whatWeDo"} Component={WhatWeDo}/>
             <Route exact path={"/whoWe"} Component={WhoWeAre}/>
             <Route exact path={"/ourWork"} Component={OurWork}/>
+            <Route exact path={"/joinUs"} Component={JoinUs}/>
             {/* <Route exact path={"/ourWork"} Component={OurWork}/>
             // <Route exact path={"/whoWe"} Component={WhoWeAre}/>
             <Route exact path={"/joinUs"} Component={JoinUs}/> */}

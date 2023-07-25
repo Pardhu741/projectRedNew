@@ -24,9 +24,11 @@ const Navbar = () => {
         console.log(item, 'item')
     }
 
+    
+
     return (
         <Box sx={{ flexGrow: 1 }} className="header">
-            <AppBar position="static" sx={{ background: 'red' }}>
+            <AppBar position="static" sx={{ background: '#f31c1c' }}>
                 <Toolbar>
                     {isSmallScreen ? (
                         <div style={{ display: 'flex', flexDirection: "row", justifyContent: 'space-between', width: '100%' }}>

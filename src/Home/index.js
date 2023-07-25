@@ -19,6 +19,10 @@ function Home() {
     }
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
+    useEffect(() => {
         const interval = setInterval(() => {
             setCurrentTextIndex((prevIndex) =>
                 (prevIndex + 1) % textArray.length
@@ -35,7 +39,8 @@ function Home() {
             <Navbar />
             <div style={{ position: 'relative' }}>
                 <video
-                    src="https://video.wixstatic.com/video/11062b_f2ce57f5f142464e8142360b7b1c326f/720p/mp4/file.mp4"
+                    // src="https://video.wixstatic.com/video/11062b_f2ce57f5f142464e8142360b7b1c326f/720p/mp4/file.mp4"
+                    src="https://res.cloudinary.com/dask68vcu/video/upload/v1690299335/pexels-karolina-grabowska-7719713_1080p_hmz82m.mp4"
                     autoPlay
                     muted
                     loop
@@ -74,12 +79,12 @@ function Home() {
                 }
             </div>
             <div class="container">
-                <div class="content glob-centre-2" >
+                <div class="content glob-centre-6" >
                     <h2 className={isSmallScreen ? 'head-text-sm' : 'head-text'}>PROJECT RED</h2>
-                    <p className={isSmallScreen ? 'para-text-sm' : 'para-text'}>Pads should be a necessity not a luxury!</p>
+                    <p className={isSmallScreen ? 'para-text-sm' : 'para-text'} style={{width:"80%"}}>"Pads should be a necessity, not a Luxury. Project Red aims to fix this."</p>
                 </div>
                 <div class="image">
-                    <img src="https://static.wixstatic.com/media/11062b_b4f60dc9061841099f2515b5f0ea4fc3~mv2.jpg/v1/fill/w_600,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_b4f60dc9061841099f2515b5f0ea4fc3~mv2.jpg" alt="Project RED" />
+                    <img src="https://static.wixstatic.com/media/e0c28e_136f2867f2b74349b430c41edbfdf597~mv2.jpeg/v1/fill/w_600,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_b4f60dc9061841099f2515b5f0ea4fc3~mv2.jpg" alt="Project RED" />
                 </div>
             </div>
             <div className="image-container">
@@ -123,8 +128,11 @@ function Home() {
                             <p className={isSmallScreen ? 'para-text-sm-2' : 'para-text-2'}>Upcoming Events</p>
                             <EastOutlinedIcon style={{
                                 color: 'white',
-                                fontSize: '42px'
-                            }} />
+                                fontSize: '42px',
+                                cursor:'pointer'
+                            }} 
+                            onClick={() => handleNavigation('/ourWork')}
+                            />
                         </div>
                     </div>
                 </div>
@@ -136,8 +144,11 @@ function Home() {
                             <p className={isSmallScreen ? 'para-text-sm-2' : 'para-text-2'}>Join The Movement</p>
                             <EastOutlinedIcon style={{
                                 color: 'white',
-                                fontSize: '42px'
-                            }} />
+                                fontSize: '42px',
+                                cursor:'pointer'
+                            }} 
+                            onClick={() => handleNavigation('/joinUs')}
+                            />
                         </div>
                     </div>
                 </div>
