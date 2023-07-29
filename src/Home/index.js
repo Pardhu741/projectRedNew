@@ -84,7 +84,7 @@ function Home() {
                     <p className={isSmallScreen ? 'para-text-sm' : 'para-text'} style={{width:"80%"}}>"Pads should be a necessity, not a Luxury. Project Red aims to fix this."</p>
                 </div>
                 <div class="image">
-                    <img src="https://static.wixstatic.com/media/e0c28e_136f2867f2b74349b430c41edbfdf597~mv2.jpeg/v1/fill/w_600,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_b4f60dc9061841099f2515b5f0ea4fc3~mv2.jpg" alt="Project RED" />
+                    <img src="https://static.wixstatic.com/media/e0c28e_136f2867f2b74349b430c41edbfdf597~mv2.jpeg/v1/fill/w_600,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_b4f60dc9061841099f2515b5f0ea4fc3~mv2.jpg" alt="Project RED" style={{borderRadius:"15px"}}/>
                 </div>
             </div>
             <div className="image-container">

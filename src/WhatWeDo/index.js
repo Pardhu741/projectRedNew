@@ -13,14 +13,14 @@ function WhatWeDo() {
     const isSmallScreen = useMediaQuery('(max-width: 800px)');
     const images = [
         'https://static.wixstatic.com/media/e0c28e_136f2867f2b74349b430c41edbfdf597~mv2.jpeg',
-        'https://res.cloudinary.com/dcewbqlgf/image/upload/v1690301682/project_red/WhatsApp_Image_2020-12-02_at_7.06.12_PM_2_lvjghr.jpg'
-        // 'https://static.wixstatic.com/media/e0c28e_044c4abe7e9e4d50b1a627d6c1a79d0a~mv2.jpeg',
-        // 'https://static.wixstatic.com/media/e0c28e_72c135319d0d4e418cf2977411f1233e~mv2.jpeg',
-        // 'https://static.wixstatic.com/media/e0c28e_f78c949febfa4e599bee6b6c72f63d8c~mv2.jpeg',
-        // 'https://static.wixstatic.com/media/e0c28e_a2b5bfecfdee42cba2542c5fae6385d7~mv2.jpeg',
-        // 'https://static.wixstatic.com/media/e0c28e_8874ab1b319d47628029c2c7b0cb1809~mv2.jpeg',
-        // 'https://static.wixstatic.com/media/e0c28e_e5b1e3bb9e114883a01bbb98439ad239~mv2.png',
-        // 'https://static.wixstatic.com/media/e0c28e_587f341e1917404c9c8ea5ef3416d38a~mv2.jpeg'
+        'https://res.cloudinary.com/dcewbqlgf/image/upload/v1690301682/project_red/WhatsApp_Image_2020-12-02_at_7.06.12_PM_2_lvjghr.jpg',
+        'https://static.wixstatic.com/media/e0c28e_044c4abe7e9e4d50b1a627d6c1a79d0a~mv2.jpeg',
+        'https://static.wixstatic.com/media/e0c28e_72c135319d0d4e418cf2977411f1233e~mv2.jpeg',
+        'https://static.wixstatic.com/media/e0c28e_f78c949febfa4e599bee6b6c72f63d8c~mv2.jpeg',
+        'https://static.wixstatic.com/media/e0c28e_a2b5bfecfdee42cba2542c5fae6385d7~mv2.jpeg',
+        'https://static.wixstatic.com/media/e0c28e_8874ab1b319d47628029c2c7b0cb1809~mv2.jpeg',
+        'https://static.wixstatic.com/media/e0c28e_e5b1e3bb9e114883a01bbb98439ad239~mv2.png',
+        'https://static.wixstatic.com/media/e0c28e_587f341e1917404c9c8ea5ef3416d38a~mv2.jpeg'
     ]
 
     function openLinks(path) {
@@ -72,7 +72,9 @@ function WhatWeDo() {
                         </div>
                         <div class="content glob-centre-3" style={{ marginLeft: "8%" }}>
                             <h2 style={{ marginTop: '0px', marginBottom: "15px" }} className="text-row-mn">Who We Are</h2>
-                            <p style={{ width: "70%" }} className="text-para-mn">Project Red is a registered non-profit organization that aims to empower women by expanding awareness about menstrual hygiene and enabling access to sanitary products. We believe in breaking the period taboo and creating an open dialogue about menstrual health. Our team is dedicated to providing women with the resources they need to manage their periods with dignity and confidence.</p>
+                            <p style={{ width: "80%",marginBottom:"0" }} className="text-para-mn">Project Red is a non-profit organization that aims to empower girls and women by expanding awareness about menstrual hygiene and enabling access to sanitary products.</p>
+                        <p style={{ width: "80%",marginBottom:"0" }} className="text-para-mn">We believe that breaking the period taboo and creating an open dialogue about menstrual health can have significant impact in enabling access to menstrual products. </p>
+                        <p style={{ width: "80%",marginBottom:"0" }} className="text-para-mn">Our team is dedicated to providing women with the resources they need to manage their periods with dignity and confidence.</p>
                         </div>
                     </div>
                     <div style={{ borderTop: '2px solid white', width: '100%',marginTop:"3%" }}></div>
@@ -82,27 +84,30 @@ function WhatWeDo() {
                             {/* <p style={{ width: "70%" }} className="text-para-mn">TProject Red aims to empower women to shed the “period taboo” by expanding awareness about menstrual hygiene and enabling access to sanitary products.</p> */}
                             <div style={{display:"flex",flexDirection:"row",justifyContent:'center',alignItems:"center"}}>
                             <CircleIcon sx={{fontSize:"14px",color:"white",marginRight:"15px"}}/>
-                            <p style={{ width: "100%",margin:"0px"}} className="text-para-mn">Vending Machines Installed - <span style={{color:"pink"}}>3 machines</span></p>
+                            <p style={{ width: "100%",margin:"0px"}} className="text-para-mn">Lives impacted : <span style={{color:"pink"}}>5000 girls and women in Mewat, Haryana and Saharanpur, Uttar Pradesh</span></p>
                             </div>
                             <div style={{display:"flex",flexDirection:"row",justifyContent:'center',alignItems:"center"}}>
                             <CircleIcon sx={{fontSize:"14px",color:"white",marginRight:"15px"}}/>
-                            <p style={{ width: "100%",margin:"0px"}} className="text-para-mn">Sanitary Napkins Distributed - <span style={{color:"pink"}}>6000 packets consisting of 4 sanitary napkins</span></p>
+                            <p style={{ width: "100%",margin:"0px"}} className="text-para-mn">Sanitary Napkins Distributed - <span style={{color:"pink"}}>6000 packets consisting of 2 reusable pads or 10 disposable sanitary napkins </span></p>
                             </div>
                             <div style={{display:"flex",flexDirection:"row",justifyContent:'center',alignItems:"center"}}>
                             <CircleIcon sx={{fontSize:"14px",color:"white",marginRight:"15px"}}/>
-                            <p style={{ width: "100%",margin:"0px"}} className="text-para-mn">How many women provided with sanitary napkins - <span style={{color:"pink"}}>2000</span></p>
+                            <p style={{ width: "100%",margin:"0px"}} className="text-para-mn">Vending Machines Installed - <span style={{color:"pink"}}>20 machines in girls schools, community centers, Women’s barrack in District Jails</span></p>
                             </div>
                             <div style={{display:"flex",flexDirection:"row",justifyContent:'flex-start',alignItems:"flex-start"}}>
                             <CircleIcon sx={{fontSize:"14px",color:"white",marginRight:"15px",marginTop:"10px"}}/>
-                            <p style={{ width: "100%",margin:"0px"}} className="text-para-mn">How many regions Project Red was Implemented - <span style={{color:"pink"}}>600 women in Mewaar In 5-6 different places during Covid - Through Taarini : 3 places</span></p>
+                            <p style={{ width: "100%",margin:"0px"}} className="text-para-mn">Fundraising - <span style={{color:"pink"}}>INR 3,00,000 through 3 rounds of fund-raisers</span></p>
                             </div>
                             <div style={{display:"flex",flexDirection:"row",justifyContent:'center',alignItems:"center"}}>
                             <CircleIcon sx={{fontSize:"14px",color:"white",marginRight:"15px"}}/>
-                            <p style={{ width: "100%",margin:"0px"}} className="text-para-mn">Newspaper and media coverage - <span style={{color:"pink"}}>3 media coverages</span></p>
+                            <p style={{ width: "100%",margin:"0px"}} className="text-para-mn">Areas where we work :</p>
                             </div>
+                            <p style={{ width: "80%",margin:"0px",marginLeft:"8%",color:"pink"}} className="text-para-mn"> - Impacted lives of 600 women in Mewat, Haryana in partnership with ShriRam Foundation</p>
+                            <p style={{ width: "80%",margin:"0px",marginLeft:"8%",color:"pink"}} className="text-para-mn"> - Impacted lives of 2000 women in Saharanpur, Uttar Pradesh</p>
+                            <p style={{ width: "80%",margin:"0px",marginLeft:"8%",color:"pink"}} className="text-para-mn"> - Impacted lives of 2000 women in West Bengal</p>
                             <div style={{display:"flex",flexDirection:"row",justifyContent:'center',alignItems:"center"}}>
                             <CircleIcon sx={{fontSize:"14px",color:"white",marginRight:"15px"}}/>
-                            <p style={{ width: "100%",margin:"0px"}} className="text-para-mn">Fundraising - <span style={{color:"pink"}}>1,70, 000 rupees : fundraiser raised.</span></p>
+                            <p style={{ width: "100%",margin:"0px"}} className="text-para-mn">Newspaper and media coverage - <span style={{color:"pink"}}>Local newspapers, CNN-TV 18, Socio Story</span></p>
                             </div>
                         </div>
                         <div className="carousel-container" style={{ flex: '1', maxWidth: '50%', height: '100%', overflow: 'hidden', marginLeft: "3%",borderRadius:"15px" }}>
@@ -116,7 +121,17 @@ function WhatWeDo() {
                         </div>
                         <div class="content glob-centre-3" style={{ marginLeft: "8%" }}>
                             <h2 style={{ marginTop: '0px', marginBottom: "15px" }} className="text-row-mn">Campaigns</h2>
-                            <p style={{ width: "70%" }} className="text-para-mn">Project Red has done 3 major awareness campaigns, which included pad vending machines, videos from gynaecologists, pad distribution drives and a handbook that contained all the relevant knowledge about menstruation. To know more, go to Our Work tab!</p>
+                            <p style={{ width: "70%" }} className="text-para-mn">Project Red has done 4 major campaigns, from 2020-2023 </p>
+                            <p style={{ width: "70%" }} className="text-para-mn">2020 – Awareness campaigns and pad distribution drives in X and U village in Mewat, Haryana. Also developed and distributed a handbook that contained all the relevant knowledge about menstruation.</p>
+                            <p style={{ width: "70%",color:"pink"}} className="text-para-mn">First fundraiser – INR 75,000</p>
+                            <p style={{ width: "70%",margin:"0",marginBottom:"3%"}} className="text-para-mn">Pre-campaign and post-campaign survey conducted (with 600 sample size) indicating increase in awareness by Y% and Z% satisfaction with re-usable pads</p>
+                            <p style={{ width: "70%",margin:"0",marginBottom:"3%"}} className="text-para-mn">2021 – Pad distribution drives to impacted areas during COVID in partnership with The ShriRam Foundation</p>
+                            <p style={{ width: "70%",margin:"0"}} className="text-para-mn">2022 – Innovated on the idea of installing vending machines to create sustainability – developed a prototype with SMS module to ensure pads are refilled on time. </p>
+                            <p style={{ width: "70%",color:"pink"}} className="text-para-mn">Second fundraiser: INR 50,000</p>
+                            <p style={{ width: "70%",margin:"0",marginBottom:"3%"}} className="text-para-mn">Installed 3 machines in Delhi and Saharanpur, Uttar Pradesh in partnership with Taarini Foundation</p>
+                            <p style={{ width: "70%",margin:"0"}} className="text-para-mn">2022 – Further innovated on vending machine design to ensure it works in areas with low electricity supply. Installed 5 more machines in girls school and Women’s baracks in District Jail in Saharanpur, Uttar Pradesh in partnership with Taarini Foundation</p>
+                            <p style={{ width: "70%",color:"pink"}} className="text-para-mn">Third fundraiser: INR 150,000</p>
+                            <p style={{ width: "70%",margin:"0"}} className="text-para-mn">2023 – Installed 10 more machines in Saharanpur, Uttar Pradesh in partnership with Taarini Foundation. Installed 10 machines in West Bengal in girls school in Partnership with C3India, Center of Catalysing Change.</p>
                         </div>
                     </div>
                     <div style={{ borderTop: '2px solid white', width: '100%',marginTop:"3%" }}></div>

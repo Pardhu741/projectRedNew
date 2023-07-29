@@ -41,6 +41,16 @@
     margin-left: 10%;
     margin-right: 10%;
   }
+
+  .logos-container2 {
+    display: flex; /* Use flexbox */
+    align-items: flex-start; /* Align logos vertically in the center */
+    justify-content: flex-start; 
+    margin-top: 2%;
+    /* gap: 15%; */
+    /* margin-left: 10%;
+    margin-right: 10%; */
+  }
   
   .logo {
     width: 130px; /* Set the width of each logo */
