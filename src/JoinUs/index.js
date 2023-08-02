@@ -36,7 +36,7 @@ function JoinUs() {
 
     async function dataUpload(data) {
         console.log(JSON.stringify(data),'stringfied')
-        fetch('https://sheetdb.io/api/v1/euxlm7u9ie7yp', {
+        fetch('https://sheetdb.io/api/v1/6g9g00p50urpt', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
