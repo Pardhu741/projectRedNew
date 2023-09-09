@@ -24,7 +24,7 @@ const Navbar = () => {
         console.log(item, 'item')
     }
 
-    
+
 
     return (
         <Box sx={{ flexGrow: 1 }} className="header">
@@ -78,32 +78,38 @@ const Navbar = () => {
                                 </div>
                                 <div style={{ display: 'flex', flexDirection: 'row', justifyContent: "flex-end", width: '100%' }}>
                                     <ListItem button sx={{ width: 150 }} onClick={() => {
-                                        handleNavigation('/whatWeDo');
-                                        setItem(0);
+                                        handleNavigation('/whoWe');
                                     }}
                                     >
-                                        <ListItemText primary="What we do" className={item === 0 ? 'global-text-sty-manp' : 'global-text-sty'} />
+                                        <ListItemText primary="Who we are" className={item === 0 ? 'global-text-sty-manp' : 'global-text-sty'} />
                                     </ListItem>
                                     <ListItem button sx={{ width: 150 }} onClick={() => {
-                                        handleNavigation('/whoWe');
-                                        setItem(1);
+                                        handleNavigation('/whatWeDo');
+
                                     }}
                                     >
-                                        <ListItemText primary="Who we are" className={item === 1 ? 'global-text-sty-manp' : 'global-text-sty'} />
+                                        <ListItemText primary="What we do" className={item === 1 ? 'global-text-sty-manp' : 'global-text-sty'} />
                                     </ListItem>
                                     <ListItem button sx={{ width: 150 }}
-                                    onClick={() => {
-                                        handleNavigation('/ourWork');
-                                        setItem(2);
-                                    }}
+                                        onClick={() => {
+                                            handleNavigation('/ourWork');
+
+                                        }}
                                     >
                                         <ListItemText primary="Our work" className={item === 2 ? 'global-text-sty-manp' : 'global-text-sty'} />
                                     </ListItem>
-                                    <ListItem button sx={{ width: 150 }}
-                                    onClick={() => {
-                                        handleNavigation('/joinUs');
-                                        setItem(3);
+                                    <ListItem button sx={{ width: 150 }} onClick={() => {
+                                        handleNavigation('/patnerships');
+
                                     }}
+                                    >
+                                        <ListItemText primary="Partnerships" className={item === 0 ? 'global-text-sty-manp' : 'global-text-sty'} />
+                                    </ListItem>
+                                    <ListItem button sx={{ width: 150 }}
+                                        onClick={() => {
+                                            handleNavigation('/joinUs');
+
+                                        }}
                                     >
                                         <ListItemText primary="Join us" className={item === 3 ? 'global-text-sty-manp' : 'global-text-sty'} />
                                     </ListItem>
@@ -132,34 +138,34 @@ const Navbar = () => {
                 <List>
                     <ListItem button>
                         <ListItemText primary="What we do" className={item === 0 ? 'global-text-sty-manp' : 'global-text-sty'}
-                        onClick={() => {
-                            handleNavigation('/whatWeDo');
-                            setItem(0);
-                        }}
+                            onClick={() => {
+                                handleNavigation('/whatWeDo');
+                                setItem(0);
+                            }}
                         />
                     </ListItem>
                     <ListItem button>
                         <ListItemText primary="Who we are" className={item === 1 ? 'global-text-sty-manp' : 'global-text-sty'}
-                        onClick={() => {
-                            handleNavigation('/whoWe');
-                            setItem(1);
-                        }}
+                            onClick={() => {
+                                handleNavigation('/whoWe');
+                                setItem(1);
+                            }}
                         />
                     </ListItem>
                     <ListItem button>
-                        <ListItemText primary="Our work" className={item === 2 ? 'global-text-sty-manp' : 'global-text-sty'} 
-                        onClick={() => {
-                            handleNavigation('/ourWork');
-                            setItem(2);
-                        }}
+                        <ListItemText primary="Our work" className={item === 2 ? 'global-text-sty-manp' : 'global-text-sty'}
+                            onClick={() => {
+                                handleNavigation('/ourWork');
+                                setItem(2);
+                            }}
                         />
                     </ListItem>
                     <ListItem button>
                         <ListItemText primary="Join us" className={item === 3 ? 'global-text-sty-manp' : 'global-text-sty'}
-                        onClick={() => {
-                            handleNavigation('/joinUs');
-                            setItem(3);
-                        }}
+                            onClick={() => {
+                                handleNavigation('/joinUs');
+                                setItem(3);
+                            }}
                         />
                     </ListItem>
                 </List>

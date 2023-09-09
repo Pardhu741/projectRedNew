@@ -20,7 +20,7 @@ function Home() {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -81,13 +81,29 @@ function Home() {
             <div class="container">
                 <div class="content glob-centre-6" >
                     <h2 className={isSmallScreen ? 'head-text-sm' : 'head-text'}>PROJECT RED</h2>
-                    <p className={isSmallScreen ? 'para-text-sm' : 'para-text'} style={{width:"80%"}}>"Pads should be a necessity, not a Luxury. Project Red aims to fix this."</p>
+                    <p className={isSmallScreen ? 'para-text-sm' : 'para-text'} style={{ width: "80%" }}>"Pads should be a necessity, not a luxury. Project Red aims to fix this."</p>
                 </div>
                 <div class="image">
-                    <img src="https://static.wixstatic.com/media/e0c28e_136f2867f2b74349b430c41edbfdf597~mv2.jpeg/v1/fill/w_600,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_b4f60dc9061841099f2515b5f0ea4fc3~mv2.jpg" alt="Project RED" style={{borderRadius:"15px"}}/>
+                    <img src="https://static.wixstatic.com/media/e0c28e_136f2867f2b74349b430c41edbfdf597~mv2.jpeg/v1/fill/w_600,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_b4f60dc9061841099f2515b5f0ea4fc3~mv2.jpg" alt="Project RED" style={{ borderRadius: "15px" }} />
                 </div>
             </div>
             <div className="image-container">
+                <div className="image-wrapper">
+                    <img src="https://static.wixstatic.com/media/9c608a_f5de6f7f1e9a42b8a25b295d2fb2469b~mv2_d_2880_1920_s_2.jpg" alt="Image 2" />
+                    <div className="overlay" style={{ backgroundColor: 'rgba(77, 130, 239, 0.8)' }}>
+                        <div className='text-cont' style={{ marginTop: '3rem', marginLeft: '2rem' }}>
+                            <h2 className={isSmallScreen ? 'head-text-sm-2' : 'head-text-2'}>WHO WE ARE</h2>
+                            <p className={isSmallScreen ? 'para-text-sm-2' : 'para-text-2'}>Our Impact</p>
+                            <EastOutlinedIcon style={{
+                                color: 'white',
+                                fontSize: '42px',
+                                cursor: 'pointer'
+                            }}
+                                onClick={() => handleNavigation('/whoWe')}
+                            />
+                        </div>
+                    </div>
+                </div>
                 <div className="image-wrapper">
                     <img src="https://static.wixstatic.com/media/9c608a_84dd07f87f0848c4b78f0f134135029a~mv2_d_4272_2848_s_4_2.jpg" alt="Image 1" />
                     <div className="overlay" style={{ backgroundColor: 'rgba(24, 21, 124, 0.8)' }}>
@@ -97,25 +113,9 @@ function Home() {
                             <EastOutlinedIcon style={{
                                 color: 'white',
                                 fontSize: '42px',
-                                cursor:'pointer'
-                            }} 
-                            onClick={() => handleNavigation('/whatWeDo')}
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div className="image-wrapper">
-                    <img src="https://static.wixstatic.com/media/9c608a_f5de6f7f1e9a42b8a25b295d2fb2469b~mv2_d_2880_1920_s_2.jpg" alt="Image 2" />
-                    <div className="overlay" style={{ backgroundColor: 'rgba(77, 130, 239, 0.8)' }}>
-                        <div className='text-cont' style={{ marginTop: '3rem', marginLeft: '2rem' }}>
-                            <h2 className={isSmallScreen ? 'head-text-sm-2' : 'head-text-2'}>WHO WE ARE</h2>
-                            <p className={isSmallScreen ? 'para-text-sm-2' : 'para-text-2'}>Our Imapct</p>
-                            <EastOutlinedIcon style={{
-                                color: 'white',
-                                fontSize: '42px',
-                                cursor:'pointer'
-                            }} 
-                            onClick={() => handleNavigation('/whoWe')}
+                                cursor: 'pointer'
+                            }}
+                                onClick={() => handleNavigation('/whatWeDo')}
                             />
                         </div>
                     </div>
@@ -129,9 +129,25 @@ function Home() {
                             <EastOutlinedIcon style={{
                                 color: 'white',
                                 fontSize: '42px',
-                                cursor:'pointer'
-                            }} 
-                            onClick={() => handleNavigation('/ourWork')}
+                                cursor: 'pointer'
+                            }}
+                                onClick={() => handleNavigation('/ourWork')}
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div className="image-wrapper">
+                    <img src="https://static.wixstatic.com/media/9c608a_86e9bc49a0634156b4c80e5a00e2225c~mv2_d_3000_2000_s_2.jpg" alt="Image 4" />
+                    <div className="overlay" style={{ backgroundColor: 'rgba(227,54,215, 0.8)' }}>
+                        <div className='text-cont' style={{ marginTop: '3rem', marginLeft: '2rem' }}>
+                            <h2 className={isSmallScreen ? 'head-text-sm-2' : 'head-text-2'}>PARTNERSHIPS</h2>
+                            <p className={isSmallScreen ? 'para-text-sm-2' : 'para-text-2'}>Our Supporters</p>
+                            <EastOutlinedIcon style={{
+                                color: 'white',
+                                fontSize: '42px',
+                                cursor: 'pointer'
+                            }}
+                                onClick={() => handleNavigation('/patnerships')}
                             />
                         </div>
                     </div>
@@ -145,16 +161,16 @@ function Home() {
                             <EastOutlinedIcon style={{
                                 color: 'white',
                                 fontSize: '42px',
-                                cursor:'pointer'
-                            }} 
-                            onClick={() => handleNavigation('/joinUs')}
+                                cursor: 'pointer'
+                            }}
+                                onClick={() => handleNavigation('/joinUs')}
                             />
                         </div>
                     </div>
                 </div>
             </div>
-            <div style={{marginTop:'2rem'}} className={isSmallScreen? 'glob-start':'glob-centre'}>
-            <Footer />
+            <div style={{ marginTop: '2rem' }} className={isSmallScreen ? 'glob-start' : 'glob-centre'}>
+                <Footer />
             </div>
         </div>
     )
