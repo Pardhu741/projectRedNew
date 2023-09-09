@@ -93,7 +93,7 @@ function Home() {
                     <div className="overlay" style={{ backgroundColor: 'rgba(77, 130, 239, 0.8)' }}>
                         <div className='text-cont' style={{ marginTop: '3rem', marginLeft: '2rem' }}>
                             <h2 className={isSmallScreen ? 'head-text-sm-2' : 'head-text-2'}>WHO WE ARE</h2>
-                            <p className={isSmallScreen ? 'para-text-sm-2' : 'para-text-2'}>Our Impact</p>
+                            <p className={isSmallScreen ? 'para-text-sm-2' : 'para-text-2'}>Our Mission</p>
                             <EastOutlinedIcon style={{
                                 color: 'white',
                                 fontSize: '42px',
@@ -109,7 +109,7 @@ function Home() {
                     <div className="overlay" style={{ backgroundColor: 'rgba(24, 21, 124, 0.8)' }}>
                         <div className='text-cont' style={{ marginTop: '3rem', marginLeft: '2rem' }}>
                             <h2 className={isSmallScreen ? 'head-text-sm-2' : 'head-text-2'}>WHAT WE DO</h2>
-                            <p className={isSmallScreen ? 'para-text-sm-2' : 'para-text-2'}>Our Mission</p>
+                            <p className={isSmallScreen ? 'para-text-sm-2' : 'para-text-2'}>Our Impact</p>
                             <EastOutlinedIcon style={{
                                 color: 'white',
                                 fontSize: '42px',
