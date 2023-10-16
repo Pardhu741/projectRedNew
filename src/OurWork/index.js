@@ -3,6 +3,7 @@ import Navbar from "../NavBar";
 import Founder from '../founder.jpg'
 import Footer from "../Footer";
 import { useMediaQuery } from '@mui/material';
+import { Carousel } from 'react-responsive-carousel';
 import { useEffect } from 'react';
 import logo1 from '../logo1.png'
 import logo2 from '../logo2.jpeg'
@@ -21,6 +22,15 @@ import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
 function OurWork() {
     const isSmallScreen = useMediaQuery('(max-width: 800px)');
     const [tab, setTab] = useState(0)
+
+    const images = [
+        'https://res.cloudinary.com/dask68vcu/image/upload/v1697477539/WhatsApp_Image_2023-10-15_at_8.01.21_AM_1_exk4sa.jpg',
+        'https://res.cloudinary.com/dask68vcu/image/upload/v1697477539/WhatsApp_Image_2023-10-15_at_8.01.22_AM_3_iszlqw.jpg',
+        'https://res.cloudinary.com/dask68vcu/image/upload/v1697477539/WhatsApp_Image_2023-10-15_at_8.01.22_AM_uwjw0k.jpg',
+        'https://res.cloudinary.com/dask68vcu/image/upload/v1697477540/WhatsApp_Image_2023-10-15_at_8.01.21_AM_n1sysd.jpg',
+        'https://res.cloudinary.com/dask68vcu/image/upload/v1697477539/WhatsApp_Image_2023-10-15_at_8.01.21_AM_2_lraxoh.jpg',
+        'https://res.cloudinary.com/dask68vcu/image/upload/v1697477539/WhatsApp_Image_2023-10-15_at_8.01.22_AM_1_xv9jng.jpg'
+    ]
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -55,7 +65,7 @@ function OurWork() {
                         <div className="overlay" style={{ backgroundColor: 'rgba(77, 130, 239, 0.8)' }}>
                             <div className='text-cont' style={{ marginTop: '3rem', marginLeft: '2rem' }}>
                                 <h2 className={isSmallScreen ? 'head-text-sm-2' : 'head-text-2'}>Pad Distributions during COVID</h2>
-                                <p className={isSmallScreen ? 'para-text-sm-2' : 'para-text-2'}>6000+ Pads Distributed</p>
+                                <p className={isSmallScreen ? 'para-text-sm-2' : 'para-text-2'}>15,000+ Pads Distributed</p>
                                 <EastOutlinedIcon style={{
                                     color: 'white',
                                     fontSize: '42px',
@@ -87,7 +97,7 @@ function OurWork() {
                         <div className="overlay" style={{ backgroundColor: 'rgba(234, 222, 113, 0.8)' }}>
                             <div className='text-cont' style={{ marginTop: '3rem', marginLeft: '2rem' }}>
                                 <h2 className={isSmallScreen ? 'head-text-sm-2' : 'head-text-2'}>Vending Machines Installation</h2>
-                                <p className={isSmallScreen ? 'para-text-sm-2' : 'para-text-2'}>3 Machines Installed</p>
+                                <p className={isSmallScreen ? 'para-text-sm-2' : 'para-text-2'}>18 Machines Installed</p>
                                 <EastOutlinedIcon style={{
                                     color: 'white',
                                     fontSize: '42px',
@@ -101,7 +111,7 @@ function OurWork() {
                 </div>
                 <div className="overlay-content">
                     <div className="glob-centre-2" style={{ marginBottom: "2%" }}>
-                        <h2 className="text-row-mn-2" style={{ margin: "0px", marginBottom: "1%" }}>Project Red has made a difference to the lives of more than 6000 girls through its multiple initiatives.</h2>
+                        <h2 className="text-row-mn-2" style={{ margin: "0px", marginBottom: "1%" }}>Project Red has made a difference to the lives of more than 10,000 girls through its multiple initiatives.</h2>
                     </div>
                     {tab === 0 ? <div class="container" style={{ marginTop: '3%' }}>
                         <div class="content glob-centre-3" style={{ marginLeft: "8%" }}>
@@ -147,15 +157,45 @@ function OurWork() {
                         </div> : ""}
                     {/* <div style={{ borderTop: '2px solid white', width: '100%' }}></div> */}
                     {tab === 3 ?
-                        <div class="container" style={{ marginTop: '3%' }}>
-                            <div class="content glob-centre-3" style={{ marginLeft: "8%" }}>
-                                <h2 style={{ marginTop: '0px', marginBottom: "0px" }} className="text-row-mn">Vending Machines Installation:</h2>
-                                <p style={{ width: "80%" }} className="text-para-mn">3 vending machines have already been installed with the help of Taarini Foundation. One of them has been installed in Pandit Deen Dayal Upadhyaya Ashram Paddati Balika Vidyalya in Uttar Pradesh. It is a state run, all girls boarding school. The total strength is 480 girls. The second one has been installed in the District Jail of the Saharanpur District. The women's barrack has a total strength of 51 inmates. The third one has been installed in the All India Women’s Conference (AIWC). The rehabilitation and vocational training home has a total strength of 62 women on a rotational basis. 10 more machines are currently in the process of being installed.</p>
+                        <div>
+                            <div class="container" style={{ marginTop: '3%' }}>
+                                <div class="content glob-centre-3" style={{ marginLeft: "8%" }}>
+                                    <h2 style={{ marginTop: '0px', marginBottom: "0px" }} className="text-row-mn">Vending Machines Installation:</h2>
+                                    <p style={{ width: "80%" }} className="text-para-mn">3 vending machines have already been installed with the help of Taarini Foundation. One of them has been installed in Pandit Deen Dayal Upadhyaya Ashram Paddati Balika Vidyalya in Uttar Pradesh. It is a state run, all girls boarding school. The total strength is 480 girls. The second one has been installed in the District Jail of the Saharanpur District. The women's barrack has a total strength of 51 inmates. The third one has been installed in the All India Women’s Conference (AIWC). The rehabilitation and vocational training home has a total strength of 62 women on a rotational basis.</p>
+                                </div>
+                                <div className="carousel-container" style={{ flex: '1', maxWidth: '50%', height: '100%', overflow: 'hidden', marginLeft: "3%", borderRadius: "15px" }}>
+                                    <img src="https://res.cloudinary.com/dask68vcu/image/upload/v1694246864/qog8jfn9iwcwtxazy6uf.jpg" />
+                                </div>
                             </div>
-                            <div className="carousel-container" style={{ flex: '1', maxWidth: '50%', height: '100%', overflow: 'hidden', marginLeft: "3%", borderRadius: "15px" }}>
-                                <img src="https://res.cloudinary.com/dask68vcu/image/upload/v1694246864/qog8jfn9iwcwtxazy6uf.jpg" />
+                            <div class="container" style={{ marginTop: '3%' }}>
+                                <div className="carousel-container" style={{ flex: '1', maxWidth: '50%', height: '500px', overflow: 'hidden', marginRight: "3%" }}>
+                                    <Carousel
+                                        showArrows={true}
+                                        showThumbs={false}
+                                        emulateTouch={true}
+                                        infiniteLoop={true}
+                                        showStatus={false}
+                                        autoPlay
+                                        interval={2000}
+                                        style={{ height: '100%', width: '100%' }} // Set carousel container height and width to 100% to fill its parent
+                                    >
+                                        {images.map((imageUrl, index) => (
+                                            <div key={index} style={{ height: '500px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                                <img
+                                                    src={imageUrl}
+                                                    alt={`Slide ${index + 1}`}
+                                                    style={{ maxHeight: '100%', width: 'auto', borderRadius: "15px" }}
+                                                />
+                                            </div>
+                                        ))}
+                                    </Carousel>
+                                </div>
+                                <div class="content glob-centre-3" style={{ marginLeft: "8%" }}>
+                                    <p style={{ width: "90%" }} className="text-para-mn">10 machines installed with Taarini Foundation in schools and community centres in Delhi. Further, 5 machines installed with C3 Foundation in 5 different schools in West Bengal. They are: Srikrishnapur High School, Chandipur + Kamina High School, Tulsiberia + Begnan Adarsha Girls High School, Bangan I + Jyangra Adarsha Vidyalaya, Kolkata + Rajarhat Shikshaniketan Girls High School, Kolkata.</p>
+                                </div>
                             </div>
-                        </div> : ""}
+                        </div>
+                        : ""}
                 </div>
             </div>
             <div style={{ marginTop: '2rem' }} className={isSmallScreen ? 'glob-start' : 'glob-centre'}>
